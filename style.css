@@ -1,3 +1,193 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+}
+
+body {
+    color: var(--VeryDarkBlue);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hedder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+
+.hedder ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+
+
+}
+
+.hedder a {
+    text-decoration: none;
+
+    color: var(--DesaturatedBlue);
+    padding-left: 3vw;
+
+}
+
+.hedder img {
+    width: min-content;
+    height: min-content;
+    align-self: center;
+}
+
+.top-body {
+    padding: 3vw;
+    display: flex;
+}
+
+.rev {
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.top-body img {
+    width: 45vw;
+    height: min-content;
+    align-self: center;
+}
+
+.reg form {
+    display: flex;
+
+}
+
+.content {
+    align-self: center;
+    padding-right: 10vw;
+}
+
+.sub {
+    padding-left: 50px;
+}
+
+.mail input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 3px;
+
+}
+
+.mail div {
+    visibility: hidden;
+    color: red;
+
+}
+
+.mail input:invalid {
+    border-color: red;
+    outline: none;
+
+}
+
+.sub input {
+    background-color: var(--BrightBlue);
+    padding: 11px 20px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--LightGrayishBlue);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+
+}
+
+
+.sub input:hover {
+
+    background-color: hsl(224, 93%, 58%, 0.5);
+}
+
+@media only screen and (min-width: 376px) {
+    /* for big screen */
+
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    .hedder img {
+        width: 100px;
+        height: min-content;
+        align-self: center;
+    }
+
+    .top-body {
+        text-align: center;
+        display: block;
+    }
+
+    .top-body img {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+    }
+    .reg form {
+        display: block;
+    
+    }
+    
+    .content {
+        align-self: center;
+        padding-right: 0;
+    }
+    
+    .sub {
+        padding-left: 0px;
+    }
+    
+    .mail input {
+        width: 70%;
+        /* padding: 10px 20px; */
+        
+    }
+    .sub input{
+        width: 80%;
+        margin:0;
+       
+        
+    }
+
+}
