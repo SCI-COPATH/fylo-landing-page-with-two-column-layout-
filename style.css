@@ -23,7 +23,7 @@ body {
     font-weight: 400;
 }
 
-h1 {
+h1,h4{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
@@ -136,6 +136,108 @@ p {
 
     background-color: hsl(224, 93%, 58%, 0.5);
 }
+.back{
+    padding: 0;
+    margin: 0;
+    background-image:linear-gradient(#fff 0% 85%,  var(--LightGrayishBlue)85% 100%);
+}
+.back img{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.secound{
+    margin-top: 0px;
+    background-color: var(--LightGrayishBlue);
+}
+
+.linkImg img{
+    width: 20px;
+    vertical-align: middle;
+    
+}
+.linkImg a{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: var(--ModerateCyan);
+    
+}
+.linkImg a:hover {
+    color:hsl(170, 45%, 43%,0.5);
+}
+.comment img{
+    width: 20px;
+}
+.comment p{
+    padding-top: 0;
+   margin-top: 0;
+}
+.comment{
+    margin-top: 40px;
+    background-color: #fff;
+    width: 20vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: gray 0px 0px 10px 0.1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    
+}
+.foot p{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: x-small;
+    width: 700;
+}
+.foot img{
+    border-radius: 50%;
+    margin: 10px;
+    width: 40px;
+}
+.foot h4{
+    padding: 0;
+    margin: 0;
+}
+.secLast {
+    background-color: var(--DesaturatedBlue);
+    color: var(--LightGrayishBlue);
+    padding: 3vw;
+   display: flex;     
+}
+.reg-bot{
+    align-self: center;
+}
+.bot-sub{
+    padding: 0;
+    margin: 0;
+}
+
+.m2{
+    width: fit-content;
+}
+.m2 input{
+   
+   width: 30vw;
+}
+.m2 input::placeholder{
+    color: var(--LightGray);
+}
+.secCont{
+    width: 50%;
+    padding-right: 30px;
+}
+.bot-sub input{
+    margin: 0;
+    width: 20vw;
+}
+.back img{
+    content: url("./images/bg-curve-desktop.svg");
+    max-width: 100%;
+}
 
 @media only screen and (min-width: 376px) {
     /* for big screen */
@@ -189,5 +291,50 @@ p {
        
         
     }
-
+    .secound{
+        text-align: left;
+    }
+    .secound h1{
+        text-align: center;
+    }
+    
+    .linkImg img{
+        width: 20px;
+    }
+    .comment{
+        
+        width: 75vw;
+        margin:auto;
+        margin-top: 30px;
+    }
+    .comment img{
+        width: 20px;
+    }
+    .foot img{
+        width: 40px;
+    }
+    .secLast{
+        display: block;
+    }
+    .secCont{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .m2{
+        padding: 0;
+        margin: 0;
+        width: 80vw;
+    }
+    
+    .reg-bot input{
+        width: 100%;
+        
+    }
+    .back img{
+        content: url("./images/bg-curve-mobile.svg");
+        max-width: 100%;
+    }
+    
 }
