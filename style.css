@@ -206,6 +206,8 @@ p {
     background-color: var(--DesaturatedBlue);
     color: var(--LightGrayishBlue);
     padding: 3vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
    display: flex;     
 }
 .reg-bot{
@@ -238,14 +240,46 @@ p {
     content: url("./images/bg-curve-desktop.svg");
     max-width: 100%;
 }
-
-@media only screen and (min-width: 376px) {
-    /* for big screen */
-
-
-
-
+.fot{
+    background-color: var(--VeryDarkBlue);
+    padding: 3vw;
+    color: var(--LightGrayishBlue);
+    
 }
+.fott{
+    display: flex;
+    justify-content: space-between;
+}
+.fott ul{
+    list-style: none;
+    
+}
+.fott li{
+    padding-bottom: 20px;
+}
+.fott a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--LightGrayishBlue);
+}
+.ele{
+    display: flex;
+    
+}
+.ele div{
+    align-self: center;
+    padding-right: 10px;
+}
+.social ul{
+    display: flex;
+}
+.social li{
+    padding: 0px 20px;
+}
+.fott a:hover{
+    color: var(--BrightBlue);
+}
+
 
 @media only screen and (max-width: 375px) {
     .hedder img {
@@ -335,6 +369,21 @@ p {
     .back img{
         content: url("./images/bg-curve-mobile.svg");
         max-width: 100%;
+    }
+    .fott{
+        display: block;
+     
+    }
+    .fott ul{
+        padding: 0;
+    }
+    .social ul{
+        margin: auto;
+    }
+    .social li{
+      text-align: center;
+      margin: auto;
+      
     }
     
 }
